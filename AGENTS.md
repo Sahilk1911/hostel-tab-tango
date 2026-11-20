@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Money is stored as integer paise and split with largest-remainder allocation (`src/lib/money.ts`) — shares always sum exactly to the bill.
+- Split math lives in `src/lib/split.ts`, settlement in `src/lib/settle.ts` (exact bitmask DP over zero-sum subgroups, greedy fallback for large groups); keep UI free of money logic so tests cover it.
+- Groups persist in browser localStorage via `src/lib/store.ts` (useSyncExternalStore); there is no backend database.
+- Bill photo scanning runs server-side through a `createServerFn` (`bill-scan.functions.ts`) calling the Lovable AI Gateway from `bill-scan.server.ts`; images are compressed in the browser first.
