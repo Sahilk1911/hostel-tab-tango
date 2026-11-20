@@ -1,14 +1,26 @@
-# Welcome to your Lovable project
+# Hostel Tab Tango
+
+Expense Splitter for Hostel Groups
+Problem. Hostel groups split Zomato orders, trips and electricity bills across many chats and lose track of who owes whom.
+Build. A group expense app that settles debts in the fewest possible payments and generates UPI payment links for each settlement.
+Must have:
+•
+Unequal splits, shares and item-wise splits from a bill photo
+•
+Minimum-transactions settlement algorithm
+•
+UPI deep link per settlement (no real payment needed)
+create a simple and understandable app
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/f69b7778-804e-4c69-96f1-a56aef2a1284).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +32,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
